@@ -2,152 +2,250 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>بين بابين</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
-
 <body>
-<div class="olive olive-one"></div>
-<div class="olive olive-two"></div>
 
-<div class="flower flower-one"></div>
-<div class="flower flower-two"></div>
-
-
-<header class="hero">
-
-<div class="sun"></div>
+<header class="header">
 
 <div class="logo">
-<span>🚪</span>
-<h1>بين بابين</h1>
-<span>🚪</span>
+
+<h2>بين بابين</h2>
+
+<span>تأملات • يوميات • كتب</span>
+
 </div>
 
-<p>
-مساحة بين ما أشعر به... وما أكتشفه
-</p>
+<nav>
 
-<button onclick="document.querySelector('.welcome').scrollIntoView({behavior:'smooth'})">
-ادخل بين البابين
-</button>
+<a class="active" href="#">الرئيسية</a>
 
-<div class="flowers">
-🌼 🌼 🌼
-</div>
+<a href="#">تأملات</a>
 
-</header>
+<a href="#">يوميات</a>
 
+<a href="#">المكتبة</a>
 
+<a href="#">المقالات</a>
 
-<nav class="doors">
+<a href="#">من أنا</a>
 
-<a href="#journal">باب الكتابة</a>
-<a href="#question">باب السؤال</a>
-<a href="#night">باب الهدوء</a>
+<a href="#">تواصل</a>
 
 </nav>
 
+</header>
 
+<section class="hero">
 
-<section class="welcome">
+<div class="overlay">
 
-<h2>أهلاً بك</h2>
+<h1>بين بابين</h1>
 
-<p>
-هنا لا أقدم إجابات جاهزة،
-ولا أضع نصائح فوق الآخرين.
-هنا نشارك الأسئلة،
-ونترك لكل شخص مساحة ليجد صوته.
+<p class="sub">
+رحلة بين الكتب والتأملات واليوميات.
 </p>
 
-</section>
+<p class="desc">
 
+ربما تجد هنا فكرة تشبهك،
+أو كلمة كنت تحتاجها اليوم.
 
-
-<section class="question" id="question">
-
-<h2>سؤال اليوم</h2>
-
-<p>
-ما الشيء الصغير الذي أستطيع أن أفعله لنفسي اليوم؟
 </p>
 
-</section>
+<a href="#" class="btn">
 
+ابدأ القراءة
 
+</a>
 
-<section class="journal" id="journal">
-
-<h2>دفتر بين البابين</h2>
-
-<p>
-لا تكتب لي...
-اكتب لنفسك.
-</p>
-
-<textarea placeholder="اكتب ما بداخلك هنا..."></textarea>
-
-</section>
-
-
-
-<div class="flowers">
-🌼 🌿 🌼
 </div>
 
-
-
-<section class="about">
-
-<h2>عن بين بابين</h2>
-
-<p>
-بين بابين هي مساحة للتوقف قليلًا...
-بين ما نعيشه وما نفهمه.
-</p>
-
-<p>
-ليست مكانًا لإعطاء الإجابات،
-بل مكانًا لطرح الأسئلة،
-والاقتراب من أنفسنا بهدوء.
-</p>
-
 </section>
 
+<section class="categories">
 
+<h2>
 
+إلى أين ترغب أن تمضي اليوم؟
 
-<section class="night" id="night">
+</h2>
 
-<div class="stars">
-✦ ✧ ✦ ✧
+<div class="cards">
+
+<div class="card">
+
+<div class="emoji">🌿</div>
+
+<h3>تأملات</h3>
+
+<p>
+
+أفكار هادئة تساعد على التأمل والسكينة.
+
+</p>
+
 </div>
 
-<div class="moon"></div>
+<div class="card">
 
-<h2>تحت ضوء القمر</h2>
+<div class="emoji">📖</div>
+
+<h3>اليوميات</h3>
 
 <p>
-في هدوء الليل...
-خذ قلمك واكتب لنفسك.
+
+مواقف وتجارب من الحياة اليومية.
+
 </p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">📚</div>
+
+<h3>المكتبة</h3>
+
+<p>
+
+كتب ملهمة مع مراجعات واقتباسات.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">☕</div>
+
+<h3>خواطر</h3>
+
+<p>
+
+كلمات قصيرة تستحق التأمل.
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<section class="quote">
 
+<div class="quote-box">
+
+<h2>
+
+"كل باب نغلقه يمنحنا فرصة لفتح باب آخر."
+
+</h2>
+
+<p>
+
+بين بابين... تبدأ الحكاية.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="articles">
+
+<h2>
+
+آخر المقالات
+
+</h2>
+
+<div class="posts">
+
+<div class="post">
+
+<img src="assets/images/post1.jpg">
+
+<h3>
+
+كيف نصنع عادة القراءة؟
+
+</h3>
+
+<p>
+
+رحلة بسيطة نحو القراءة اليومية.
+
+</p>
+
+</div>
+
+<div class="post">
+
+<img src="assets/images/post2.jpg">
+
+<h3>
+
+هدوء الصباح
+
+</h3>
+
+<p>
+
+لماذا يعتبر الصباح أفضل وقت للتأمل؟
+
+</p>
+
+</div>
+
+<div class="post">
+
+<img src="assets/images/post3.jpg">
+
+<h3>
+
+ماذا تعلمت هذا الأسبوع؟
+
+</h3>
+
+<p>
+
+أفكار وتجارب تستحق المشاركة.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
-🌿 بين بابين 🌿
+<p>
+
+© 2025 بين بابين
+
+</p>
 
 </footer>
 
+<script src="assets/js/main.js"></script>
 
 </body>
 
