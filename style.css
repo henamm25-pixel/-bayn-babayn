@@ -1,1 +1,52 @@
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: linear-gradient(to bottom, #fdfbf7, #eef5ea);
+    color: #3b3b3b;
+    text-align: center;
+}
 
+header {
+    padding: 70px 20px 30px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #5b6b53;
+}
+
+header p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.doors {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.door {
+    width: 260px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.door:hover {
+    transform: translateY(-8px);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    color: #777;
+}
