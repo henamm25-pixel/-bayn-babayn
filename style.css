@@ -204,3 +204,24 @@ section {
         transform: translateY(0);
     }
 }
+.stars {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.stars span {
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
