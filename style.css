@@ -1,262 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: "Tahoma", sans-serif;
-    background: linear-gradient(
-        to bottom,
-        #fff4d6,
-        #f8d7b5,
-        #2f3e5c
-    );
-    color: #3b3028;
+    font-family: "Tahoma", "Arial", sans-serif;
     text-align: center;
+    color: #3f4a32;
+
+    background:
+    radial-gradient(circle at top, rgba(255,220,150,0.8), transparent 30%),
+    linear-gradient(
+        to bottom,
+        #f7efd5,
+        #d9dfb6,
+        #9caf7a,
+        #536b54,
+        #27384a
+    );
+
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
-header {
-    padding: 70px 20px;
-    background: rgba(255,255,255,0.35);
+
+/* أغصان الزيتون */
+
+.olive {
+    position: fixed;
+    font-size: 55px;
+    z-index: 1;
+    opacity: 0.7;
 }
 
-h1 {
-    font-size: 50px;
-    font-weight: 300;
-    color: #6b4f35;
+.olive-one {
+    top: 40px;
+    right: 20px;
 }
 
-header p {
-    font-size: 20px;
+.olive-two {
+    bottom: 40px;
+    left: 20px;
 }
 
-section {
-    margin: 40px auto;
-    width: 80%;
-    max-width: 700px;
-    padding: 30px;
-    border-radius: 25px;
-    background: rgba(255,255,255,0.65);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+
+/* البداية */
+
+.hero {
+    padding: 70px 20px 40px;
+    background: rgba(255,255,255,0.25);
 }
 
-h2 {
-    color: #725438;
-}
-
-textarea {
-    width: 90%;
-    height: 150px;
-    border-radius: 15px;
-    border: none;
-    padding: 15px;
-    font-size: 18px;
-    background: #fffaf0;
-    resize: none;
-}
-
-.moon {
-    background: rgba(220,230,255,0.25);
-    color: white;
-    font-size: 24px;
-}
-
-footer {
-    padding: 30px;
-    color: white;
-}
-.sunrise {
-    position: relative;
-    overflow: hidden;
-}
 
 .sun {
     width: 120px;
     height: 120px;
-    background: #f8c96b;
-    border-radius: 50%;
-    margin: 0 auto 30px;
-    box-shadow: 0 0 50px rgba(248,201,107,0.8);
-}
-
-button {
-    margin-top: 25px;
-    padding: 12px 35px;
-    border-radius: 30px;
-    border: none;
-    background: #8b6b4a;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.moon {
-    position: relative;
-    overflow: hidden;
-    background: rgba(30,45,80,0.55);
-}
-
-.moon-light {
-    width: 90px;
-    height: 90px;
-    background: #e9eefc;
-    border-radius: 50%;
     margin: auto;
-    box-shadow: 0 0 40px rgba(230,240,255,0.9);
+    border-radius: 50%;
+    background: #f5c96a;
+    box-shadow: 0 0 60px #f5c96a;
 }
 
-.moon h2 {
-    color: #ffffff;
-}
 
-.moon p {
-    color: #f0f3ff;
-}
-.journal {
-    background: rgba(255, 250, 240, 0.85);
-    border: 1px solid rgba(120, 90, 60, 0.2);
-    position: relative;
-}
-
-.journal::before {
-    content: "✒";
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    font-size: 30px;
-    opacity: 0.5;
-}
-
-.journal textarea {
-    background: #fffdf7;
-    line-height: 2;
-    border: 1px solid #e4d7c5;
-}
-
-.journal p {
-    font-size: 20px;
-    color: #6d5a48;
-}
-.question {
-    background: rgba(255,255,255,0.45);
-    border-right: 5px solid #c9a66b;
-    padding: 25px;
-}
-
-.question h2 {
-    font-size: 28px;
-}
-
-.question p {
-    font-size: 22px;
-    color: #5c4a3a;
-    line-height: 2;
-}
-.doors {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin: 30px auto;
-}
-
-.doors a {
-    text-decoration: none;
-    color: #5b4634;
-    background: rgba(255,255,255,0.6);
-    padding: 12px 25px;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.doors a:hover {
-    transform: translateY(-5px);
-}
-body {
-    background:
-    radial-gradient(circle at top, rgba(255,230,170,0.8), transparent 35%),
-    linear-gradient(
-        to bottom,
-        #fff3d6 0%,
-        #f5c89a 45%,
-        #34415c 100%
-    );
-    background-attachment: fixed;
-}
-
-header {
-    animation: appear 2s ease;
-}
-
-section {
-    animation: appear 1.5s ease;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.stars {
-    display: flex;
-    justify-content: space-around;
-    font-size: 25px;
-    color: #ffffff;
-    margin-bottom: 20px;
-    opacity: 0.8;
-}
-
-.stars span {
-    animation: twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle {
-    from {
-        opacity: 0.3;
-    }
-    to {
-        opacity: 1;
-    }
-}
-.about {
-    background: rgba(255,255,255,0.55);
-    border-radius: 30px;
-    padding: 35px;
-    line-height: 2;
-    position: relative;
-}
-
-.about::before {
-    content: "❝";
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 60px;
-    color: rgba(120,90,60,0.25);
-}
-
-.about p {
-    font-size: 19px;
-    color: #584636;
-}
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
 }
+
 
 .logo span {
-    font-size: 35px;
+    font-size:35px;
 }
 
-.logo h1 {
-    margin: 0;
+
+h1 {
+    font-size:50px;
+    font-weight:300;
+    color:#556b45;
+}
+
+
+.hero p {
+    font-size:22px;
+}
+
+
+
+button {
+
+    padding:14px 35px;
+    border:none;
+    border-radius:40px;
+    background:#71855a;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+
+
+.flowers {
+    font-size:28px;
+    margin:25px;
+}
+
+
+
+/* الأبواب */
+
+.doors {
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:30px;
+
+}
+
+
+.doors a {
+
+    text-decoration:none;
+    color:#465438;
+    background:rgba(255,255,255,0.7);
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+
+
+/* الأقسام */
+
+section {
+
+    width:85%;
+    max-width:700px;
+    margin:35px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,0.7);
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+
+}
+
+
+
+h2 {
+
+    color:#65784d;
+    font-size:30px;
+
+}
+
+
+p {
+
+    font-size:20px;
+    line-height:2;
+
+}
+
+
+
+/* دفتر الكتابة */
+
+textarea {
+
+    width:90%;
+    height:160px;
+
+    border-radius:20px;
+    border:1px solid #d5cba9;
+
+    padding:20px;
+
+    font-size:18px;
+
+    background:#fffdf5;
+
+}
+
+
+
+/* الليل */
+
+.night {
+
+    background:rgba(25,40,60,0.65);
+    color:white;
+
+}
+
+
+.night h2 {
+
+    color:#ffffff;
+
+}
+
+
+.stars {
+
+    font-size:30px;
+    letter-spacing:20px;
+
+}
+
+
+.moon {
+
+    width:100px;
+    height:100px;
+
+    margin:20px auto;
+
+    border-radius:50%;
+
+    background:#edf2ff;
+
+    box-shadow:0 0 45px #edf2ff;
+
+}
+
+
+
+/* عن الموقع */
+
+.about {
+
+    background:rgba(255,250,230,0.75);
+
+}
+
+
+
+/* حركة هادئة */
+
+section, .hero {
+
+    animation:show 1.5s ease;
+
+}
+
+
+@keyframes show {
+
+from {
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+to {
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+footer {
+
+    padding:40px;
+    color:white;
+    font-size:20px;
+
 }
