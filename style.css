@@ -138,3 +138,18 @@ button:hover {
     font-size: 20px;
     color: #6d5a48;
 }
+.question {
+    background: rgba(255,255,255,0.45);
+    border-right: 5px solid #c9a66b;
+    padding: 25px;
+}
+
+.question h2 {
+    font-size: 28px;
+}
+
+.question p {
+    font-size: 22px;
+    color: #5c4a3a;
+    line-height: 2;
+}
