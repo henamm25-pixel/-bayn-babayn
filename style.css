@@ -321,3 +321,43 @@ footer {
     bottom: 35%;
     left: 15px;
 }
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .logo span {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .olive {
+        width: 80px;
+        height: 80px;
+        opacity: 0.35;
+    }
+
+    .flower {
+        width: 60px;
+        height: 60px;
+    }
+
+    .doors a {
+        width: 90%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 130px;
+    }
+
+}
