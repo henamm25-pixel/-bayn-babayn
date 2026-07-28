@@ -153,3 +153,24 @@ button:hover {
     color: #5c4a3a;
     line-height: 2;
 }
+.doors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.doors a {
+    text-decoration: none;
+    color: #5b4634;
+    background: rgba(255,255,255,0.6);
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.doors a:hover {
+    transform: translateY(-5px);
+}
