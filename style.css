@@ -225,3 +225,24 @@ section {
         opacity: 1;
     }
 }
+.about {
+    background: rgba(255,255,255,0.55);
+    border-radius: 30px;
+    padding: 35px;
+    line-height: 2;
+    position: relative;
+}
+
+.about::before {
+    content: "❝";
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 60px;
+    color: rgba(120,90,60,0.25);
+}
+
+.about p {
+    font-size: 19px;
+    color: #584636;
+}
