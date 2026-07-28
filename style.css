@@ -277,3 +277,47 @@ footer {
     font-size:20px;
 
 }
+.olive {
+    position: fixed;
+    width: 140px;
+    height: 140px;
+    background-image: url("https://images.unsplash.com/photo-1606501120154-7e7e8f0f7d36");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.55;
+    z-index: 0;
+}
+
+.olive-one {
+    top: 20px;
+    right: 10px;
+    transform: rotate(20deg);
+}
+
+.olive-two {
+    bottom: 20px;
+    left: 10px;
+    transform: rotate(-30deg);
+}
+
+
+.flower {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    background-image: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+
+.flower-one {
+    top: 45%;
+    right: 15px;
+}
+
+.flower-two {
+    bottom: 35%;
+    left: 15px;
+}
