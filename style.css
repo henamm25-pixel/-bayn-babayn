@@ -62,3 +62,54 @@ footer {
     padding: 30px;
     color: white;
 }
+.sunrise {
+    position: relative;
+    overflow: hidden;
+}
+
+.sun {
+    width: 120px;
+    height: 120px;
+    background: #f8c96b;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 50px rgba(248,201,107,0.8);
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 35px;
+    border-radius: 30px;
+    border: none;
+    background: #8b6b4a;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.moon {
+    position: relative;
+    overflow: hidden;
+    background: rgba(30,45,80,0.55);
+}
+
+.moon-light {
+    width: 90px;
+    height: 90px;
+    background: #e9eefc;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0 0 40px rgba(230,240,255,0.9);
+}
+
+.moon h2 {
+    color: #ffffff;
+}
+
+.moon p {
+    color: #f0f3ff;
+}
