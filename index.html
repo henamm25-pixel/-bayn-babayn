@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>بين بابين</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-<header class="sunrise">
+<div class="olive olive-one">🌿</div>
+<div class="olive olive-two">🌿</div>
+
+
+<header class="hero">
+
 <div class="sun"></div>
 
 <div class="logo">
-    <span>🚪</span>
-    <h1>بين بابين</h1>
-    <span>🚪</span>
+<span>🚪</span>
+<h1>بين بابين</h1>
+<span>🚪</span>
 </div>
 
 <p>
 مساحة بين ما أشعر به... وما أكتشفه
 </p>
 
-<button>ادخل بين البابين</button>
+<button onclick="document.querySelector('.welcome').scrollIntoView({behavior:'smooth'})">
+ادخل بين البابين
+</button>
+
+<div class="flowers">
+🌼 🌼 🌼
+</div>
 
 </header>
-  <nav class="doors">
+
+
+
+<nav class="doors">
 
 <a href="#journal">باب الكتابة</a>
 <a href="#question">باب السؤال</a>
-<a href="#moon">باب الهدوء</a>
+<a href="#night">باب الهدوء</a>
 
 </nav>
 
+
+
 <section class="welcome">
+
 <h2>أهلاً بك</h2>
+
 <p>
-هنا لا أقدم إجابات جاهزة، ولا أضع نصائح فوق الآخرين.
-هنا نشارك الأسئلة، ونترك لكل شخص مساحة ليجد صوته.
+هنا لا أقدم إجابات جاهزة،
+ولا أضع نصائح فوق الآخرين.
+هنا نشارك الأسئلة،
+ونترك لكل شخص مساحة ليجد صوته.
 </p>
+
 </section>
 
-<section class="door">
-<h2>الباب الأول</h2>
-<p>
-ماذا بداخلي الآن؟
-</p>
-<textarea placeholder="اكتب لنفسك..."></textarea>
-</section>
 
-<section class="door">
-<h2>الباب الثاني</h2>
-<p>
-ما الشيء الذي أريد أن أفهمه أكثر؟
-</p>
-<textarea placeholder="اكتب لنفسك..."></textarea>
-</section>
-  <section class="question">
+
+<section class="question" id="question">
 
 <h2>سؤال اليوم</h2>
 
@@ -65,47 +77,30 @@
 </p>
 
 </section>
-<section class="journal">
+
+
+
+<section class="journal" id="journal">
 
 <h2>دفتر بين البابين</h2>
 
 <p>
-هنا لا تكتب لي...
+لا تكتب لي...
 اكتب لنفسك.
 </p>
 
-<textarea placeholder="ما الشيء الذي أريد أن أسمعه من نفسي اليوم؟"></textarea>
+<textarea placeholder="اكتب ما بداخلك هنا..."></textarea>
 
 </section>
-<section class="moon">
 
-<div class="stars">
-<span>✦</span>
-<span>✧</span>
-<span>✦</span>
-<span>✧</span>
+
+
+<div class="flowers">
+🌼 🌿 🌼
 </div>
 
-<div class="moon-light"></div>
 
-<h2>تحت ضوء القمر</h2>
 
-<p>
-في هدوء الليل...
-خذ قلمك واكتب لنفسك، ليس لي.
-</p>
-
-</section>
-<div class="moon-light"></div>
-
-<h2>تحت ضوء القمر</h2>
-
-<p>
-في هدوء الليل...
-خذ قلمك واكتب لنفسك، ليس لي.
-</p>
-
-</section>
 <section class="about">
 
 <h2>عن بين بابين</h2>
@@ -116,15 +111,42 @@
 </p>
 
 <p>
-هنا لا نبحث عن إجابات جاهزة،
-ولا نكتب للآخرين فقط،
-بل نفتح بابًا صغيرًا للحديث مع أنفسنا.
+ليست مكانًا لإعطاء الإجابات،
+بل مكانًا لطرح الأسئلة،
+والاقتراب من أنفسنا بهدوء.
 </p>
 
 </section>
+
+
+
+
+<section class="night" id="night">
+
+<div class="stars">
+✦ ✧ ✦ ✧
+</div>
+
+<div class="moon"></div>
+
+<h2>تحت ضوء القمر</h2>
+
+<p>
+في هدوء الليل...
+خذ قلمك واكتب لنفسك.
+</p>
+
+</section>
+
+
+
 <footer>
-بين بابين ©
+
+🌿 بين بابين 🌿
+
 </footer>
 
+
 </body>
+
 </html>
