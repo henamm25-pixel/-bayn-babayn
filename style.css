@@ -1,89 +1,64 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body {
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+    background: linear-gradient(
+        to bottom,
+        #fff4d6,
+        #f8d7b5,
+        #2f3e5c
+    );
+    color: #3b3028;
+    text-align: center;
+    min-height: 100vh;
 }
 
-body{
-    font-family:Tahoma, Arial, sans-serif;
-    background:linear-gradient(180deg,#FFFDF8,#EEF5EA);
-    color:#444;
-    min-height:100vh;
+header {
+    padding: 70px 20px;
+    background: rgba(255,255,255,0.35);
 }
 
-.hero{
-    text-align:center;
-    padding:80px 20px 40px;
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #6b4f35;
 }
 
-.hero h1{
-    font-size:60px;
-    color:#4d5f45;
-    margin-bottom:20px;
+header p {
+    font-size: 20px;
 }
 
-.subtitle{
-    max-width:700px;
-    margin:auto;
-    line-height:2;
-    font-size:22px;
-    color:#666;
+section {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.65);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.doors{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-    padding:60px 20px;
+h2 {
+    color: #725438;
 }
 
-.door{
-    width:320px;
-    background:white;
-    border-radius:25px;
-    padding:35px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-    transition:.4s;
-    text-align:center;
+textarea {
+    width: 90%;
+    height: 150px;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    background: #fffaf0;
+    resize: none;
 }
 
-.door:hover{
-    transform:translateY(-12px);
+.moon {
+    background: rgba(220,230,255,0.25);
+    color: white;
+    font-size: 24px;
 }
 
-.icon{
-    font-size:70px;
-    margin-bottom:15px;
-}
-
-.door h2{
-    color:#556b4c;
-    margin-bottom:15px;
-}
-
-.door p{
-    line-height:1.9;
-    color:#666;
-    margin-bottom:25px;
-}
-
-button{
-    background:#738b63;
-    color:white;
-    border:none;
-    padding:14px 35px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-button:hover{
-    background:#5d7450;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#777;
+footer {
+    padding: 30px;
+    color: white;
 }
